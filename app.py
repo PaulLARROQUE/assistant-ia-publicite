@@ -21,7 +21,8 @@ prompt = f"Rédige un post publicitaire accrocheur et amical pour un {secteur} q
 
     """
     
-    texte = generator(prompt, max_length=120, num_return_sequences=1)[0]['generated_text']
+    texte = generator(prompt, max_length=200, num_return_sequences=1)[0]['generated_text']
+
     
     st.write("### Texte généré :")
     st.write(texte)
