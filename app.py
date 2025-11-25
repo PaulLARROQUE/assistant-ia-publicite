@@ -3,7 +3,8 @@ import pandas as pd
 from transformers import pipeline
 
 # Générateur de texte léger pour test
-generator = pipeline("text-generation", model="distilgpt2")
+generator = pipeline("text-generation", model="EleutherAI/gpt-neo-125M")
+
 
 st.title("Assistant IA Publicité Simplifié")
 
