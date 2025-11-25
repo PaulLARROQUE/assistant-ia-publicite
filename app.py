@@ -6,6 +6,7 @@ from transformers import pipeline
 generator = pipeline("text-generation", model="EleutherAI/gpt-neo-125M")
 
 
+
 st.title("Assistant IA Publicité Simplifié")
 
 secteur = st.text_input("Secteur de l'entreprise")
