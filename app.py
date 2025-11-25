@@ -17,10 +17,8 @@ uploaded_file = st.file_uploader("Importer vos données CSV (facultatif)", type=
 
 if st.button("Créer la publicité"):
 
-    prompt = f"""
-    Imagine que tu es un expert marketing.
-    Rédige un post publicitaire accrocheur pour un {secteur} qui propose {service}.
-    L'objectif est {objectif}. Utilise un ton amical et engageant.
+prompt = f"Rédige un post publicitaire accrocheur et amical pour un {secteur} qui propose {service} pour {objectif}."
+
     """
     
     texte = generator(prompt, max_length=120, num_return_sequences=1)[0]['generated_text']
